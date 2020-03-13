@@ -10,7 +10,3 @@
  */
 
 import './block/container.js';
-//import './block/aligned-column.js';
-
-//import './block/row.js';
-//import './block/column.js';

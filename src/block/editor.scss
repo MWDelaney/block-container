@@ -4,20 +4,3 @@
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
-
-
- .wp-block-rebel-aligned-column {
-  display: flex !important;
-
-  &.is-style-align-end {
-    justify-content: flex-end !important;
-  }
-
-  &.is-style-align-start {
-    justify-content: flex-start !important;
-  }
-
-  &.is-style-align-center {
-    justify-content: center !important;
-  }
-}
