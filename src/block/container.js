@@ -22,19 +22,27 @@ registerBlockType( 'rebel/container', {
 		__( 'Container' ),
   ],
 
+  supports: {
+    align: ["full"],
+  },
+
 	edit: ( props ) => {
 		return (
 			<div className={ props.className }>
-        <InnerBlocks />
+        <div className="container">
+          <InnerBlocks />
+        </div>
 			</div>
 		);
 	},
 
-	save: ( props ) => {
-		return (
-			<div className={ props.className }>
-        <InnerBlocks.Content />
+    save: ( props ) => {
+      return (
+        <div className={ props.className }>
+        <div className="container">
+          <InnerBlocks.Content />
+        </div>
 			</div>
-		);
-	},
+      );
+    },
 });
